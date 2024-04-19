@@ -26,20 +26,24 @@
       content="https://cdn.rocketech.it/meta/default.png"
     />
     <meta property="og:url" content="https://rocketech.it/" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
     <title>RockeTech</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="https://rocketech.it/favicon.ico" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link rel="shortcut icon" href="images/favicon.svg" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -54,8 +58,10 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
                 href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
                 Services
               </a>
@@ -95,6 +101,7 @@
         </div>
       </nav>
     </header>
+
     <!-- INTRO -->
     <section>
       <div class="intro">
@@ -130,6 +137,7 @@
         </div>
       </div>
     </section>
+
     <!-- SERVICES -->
     <section>
       <div class="services">
@@ -204,13 +212,18 @@
             </div>
           </div>
 
-          <button class="d-flex m-auto align-items-center white-button">
-            Read More
-          </button>
-          <img src="" alt="" />
+          <div class="wrapper">
+            <div class="btn-wrapper">
+              <button class="white-button">Read More</button>
+              <div class="arrow-icon">
+                <img src="images/arrow.svg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
     <!-- CASES -->
     <section>
       <div class="cases">
@@ -335,14 +348,20 @@
               </div>
             </div>
           </div>
-          <button class="d-flex m-auto align-items-center white-button">
-            More Cases
-          </button>
-          <img src="" alt="" />
+        </div>
+
+        <div class="wrapper">
+          <div class="btn-wrapper">
+            <button class="white-button">More Cases</button>
+            <div class="arrow-icon">
+              <img src="images/arrow.svg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- WORKFLOW -->
+
+    <!-- WORKFLOW 
     <section>
       <div class="workflow">
         <div class="container">
@@ -379,6 +398,7 @@
         </div>
       </div>
     </section>
+-->
     <!-- FAQ -->
     <section>
       <div class="faq">
@@ -386,87 +406,364 @@
           <div class="row">
             <div class="col-6"><h2>Frequently asked questions</h2></div>
             <div class="col-6">
-              <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
+                  <h2 class="accordion-header">
                     <button
                       class="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne"
+                      data-bs-target="#panelsStayOpen-collapseOne"
                       aria-expanded="false"
-                      aria-controls="flush-collapseOne"
+                      aria-controls="panelsStayOpen-collapseOne"
                     >
                       What is a software development service?
                     </button>
                   </h2>
                   <div
-                    id="flush-collapseOne"
+                    id="panelsStayOpen-collapseOne"
                     class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      Placeholder content for this accordion, which is intended
-                      to demonstrate the <code>.accordion-flush</code> class.
-                      This is the first item's accordion body.
+                      <span class="blue"
+                        >By providing software development services, third-party
+                        contractors take on the tasks of creating digital
+                        products and applications delegated by other
+                        companies.</span
+                      >
+                      <p class="part">
+                        Such services take different forms — from hiring
+                        freelancers for separate small tasks to augmenting
+                        existing IT departments and subcontracting dedicated
+                        development teams engaged only in your project. The
+                        projects range from relatively straightforward like a
+                        website redesign to long-term and complex like building
+                        a mobile app from scratch to post-release maintenance.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
+                  <h2 class="accordion-header">
                     <button
                       class="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
                       aria-expanded="false"
-                      aria-controls="flush-collapseTwo"
+                      aria-controls="panelsStayOpen-collapseTwo"
                     >
                       What is custom development?
                     </button>
                   </h2>
                   <div
-                    id="flush-collapseTwo"
+                    id="panelsStayOpen-collapseTwo"
                     class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      Placeholder content for this accordion, which is intended
-                      to demonstrate the <code>.accordion-flush</code> class.
-                      This is the second item's accordion body. Let's imagine
-                      this being filled with some actual content.
+                      <span class="blue"
+                        >Custom development is creating personalized software
+                        from scratch to meet the specific needs of a single
+                        customer's business. By delegating software programming,
+                        a company hires a tech vendor to deliver a digital
+                        product or provide specific IT services.</span
+                      >
+                      <p class="part">
+                        In other words, custom development is a type of business
+                        and technological relations that provides the client
+                        with a unique product created for the objectives and
+                        needs of a particular business instead of using
+                        ready-made solutions available in the market for
+                        everyone else (including your competitors). It ensures
+                        maximum efficiency and a high return on investments.
+                      </p>
+                      <p class="part">
+                        In custom development, the client decides which features
+                        will be implemented in the solution and how the product
+                        can be scaled. Individual technology also ensures a high
+                        level of security and business autonomy, as all rights
+                        and access belong exclusively to the customer.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
+                  <h2 class="accordion-header">
                     <button
                       class="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree"
+                      data-bs-target="#panelsStayOpen-collapseThree"
                       aria-expanded="false"
-                      aria-controls="flush-collapseThree"
+                      aria-controls="panelsStayOpen-collapseThree"
                     >
                       What does a custom software development company do?
                     </button>
                   </h2>
                   <div
-                    id="flush-collapseThree"
+                    id="panelsStayOpen-collapseThree"
                     class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      Placeholder content for this accordion, which is intended
-                      to demonstrate the <code>.accordion-flush</code> class.
-                      This is the third item's accordion body. Nothing more
-                      exciting happening here in terms of content, but just
-                      filling up the space to make it look, at least at first
-                      glance, a bit more representative of how this would look
-                      in a real-world application.
+                      <span class="blue"
+                        >By providing software development services, third-party
+                        contractors take on the tasks of creating digital
+                        products and applications delegated by other
+                        companies.</span
+                      >
+                      <p class="part">
+                        To answer the question in one sentence,
+                        <span class="blue"
+                          >they help other businesses emerge, grow, increase
+                          revenues, and optimize internal processes.</span
+                        >
+                        Custom software development companies can focus on
+                        different service types like web or mobile development
+                        and choose their central approach — from
+                        <span class="blue">outsourcing</span> only required
+                        specialists to a
+                        <span class="blue"
+                          >full-cycle development process.</span
+                        >
+                      </p>
+                      <p class="part">
+                        As a result, every provider has a slightly different
+                        experience. Some tech contractors assist large
+                        businesses in process streamlining by developing custom
+                        ERP or CRM software. Others build their expertise on
+                        guiding young startups throughout their journey from
+                        finding product-market fit to (in some cases) the IPO
+                        stage. Such providers specialize in the customer
+                        development (CustDev) approach and become long-term
+                        partners for their clients.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFour"
+                    >
+                      How can I customize software development?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFour"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <span class="blue"
+                        >Experienced software development providers have already
+                        an established system allowing them to adjust to the
+                        client's needs to a maximum, whether limited budgets,
+                        tight deadlines, or specific features.</span
+                      >
+                      <p class="part">
+                        Every business is unique. And experts build their
+                        services around this idea. Even if the agency created a
+                        dozen similar marketplaces in the past, another client
+                        might require a non-standard solution due to a peculiar
+                        product line, local laws, or any other restrictive
+                        reason.
+                      </p>
+                      <p class="part">
+                        Custom software development allows businesses not only
+                        to craft personalized digital products but also to
+                        impact the process. With the right approach, clients get
+                        access to documentation and the team. It ensures the
+                        necessary level of transparency and establishes trust
+                        between the service provider and the client.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFive"
+                    >
+                      How can I choose a software development firm?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFive"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <span class="blue"
+                        >Essentially, you look for a reliable tech partner to
+                        fill in the gaps in your expert knowledge and skills. To
+                        do it right, you need to consider several factors like
+                        fields of expertise and a portfolio of successful
+                        cases.</span
+                      >
+                      <p>
+                        The contractor must meet the goals and needs of your
+                        business. Before starting your search for a development
+                        firm, it's vital to understand what exactly you'll be
+                        looking for. Here are six questions that help business
+                        owners outline their search criteria. Do I fully
+                        understand my idea? Do I fully understand the
+                        competition and the market situation? Do I have enough
+                        knowledge of the technologies needed for my project?
+                        What is the main functionality of the future solution?
+                        Which features should it have? Do I have the time and
+                        budget for successful project completion? How will my
+                        project grow and develop in the future? Once you answer
+                        these questions, you start looking for potential
+                        candidates on Google or through friends, family,
+                        colleagues, and other connections. In the case of Google
+                        search, it's better to narrow down the query by using
+                        "CRM software development company" or "streaming media
+                        platform development". Another efficient method is to
+                        check the most reputable listings like
+                        <span class="blue"
+                          >Clutch, DesignRush, and GoodFirms.</span
+                        >
+                        There, besides the experience and fields of expertise,
+                        you can also find reviews from previous clients and
+                        company ratings. Typically, there are three most vital
+                        criteria you should consider while choosing a software
+                        development service provider. #1 Experience Making cheap
+                        and poor-quality products is pointless and risky. To
+                        create and launch a high-quality, in-demand solution,
+                        you need an experienced tech partner with accumulated
+                        practices and employee knowledge gained from thousands
+                        of hours of working on previous projects. Ideally, your
+                        vendor should have specialists of middle level and
+                        higher. #2 Market expertise It's expertise in your
+                        market or niche. It's essential in the case of narrow or
+                        difficult industries like trading, mobile games, data
+                        analytics, or AI. It may not be that critical for more
+                        common B2C products for renting or deliveries. Yet, you
+                        should understand the functionality of the final
+                        product. #3 Technical expertise It's hands-on experience
+                        with particular tech stacks and development instruments.
+                        Naturally, if the vendor doesn't have a set-up testing
+                        process and QA engineering department, you'll have to
+                        delegate this part to another third-party provider. Or,
+                        for example, if you need to implement AR/VR
+                        technologies, and the candidate doesn't have real cases
+                        of these technologies, it makes sense to keep looking.
+                        Always carefully check the candidates' portfolios along
+                        with the "About Us" page. It's a priceless source of
+                        useful information about the company itself and what
+                        they are proud of.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseSix"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseSix"
+                    >
+                      What are the most popular custom software programming
+                      languages and tools?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseSix"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Some developers try to sell selected tech stacks as
+                        "popular” or "trendy.” However, as it's believed in
+                        serious IT,<span class="blue">
+                          a software development company should offer a tech
+                          stack that solves the tasks and reaches the project's
+                          goal cost-effectively.</span
+                        >
+                        While there are indeed popular and widespread
+                        technologies, the instruments should first be
+                        <span class="blue">effective.</span> That's why
+                        different tools and languages serve different project
+                        types and solve separate tasks. They typically belong to
+                        a particular type of software development, although many
+                        languages, for example, are universal. Frontend stack:
+                        JavaScript; Vue.js, Angular, React.js, Redux Backend
+                        stack: Python, Java, PHP; Django, Node.js, Nest.js, Koa
+                        Mobile development: Java, Swift, Objective-C, Kotlin;
+                        React Native, Firebase
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseSeven"
+                    >
+                      How does a software development company calculate the cost
+                      of its services?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseSeven"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <span class="blue"
+                        >First and foremost, consider this type of collaboration
+                        a long-term investment and a crucial step in your
+                        business strategy. And every smart investment brings a
+                        return.</span
+                      >
+                      <p>
+                        It's almost impossible to calculate the final cost of a
+                        software project (and you shouldn't believe those who
+                        tell you the opposite) due to many factors. However,
+                        <span class="blue"
+                          >three main aspects make up the cost:</span
+                        >
+                        Product size. Simple products have a basic feature set,
+                        relatively fast and easy to implement. More complex
+                        software requires more resources and more substantial
+                        budgets. Similarly, complex projects involving active
+                        customer interaction and external system integrations
+                        cost a lot. Software type. The product type defines the
+                        course of its development. It includes the feature set,
+                        design complexity, and, as a result, tech stack. Team.
+                        Similarly to choosing tech stacks, the product type and
+                        size also define the team. The final cost depends on an
+                        hourly rate, the number of specialists, their expertise,
+                        and their experience. Experienced developers tend to
+                        <span class="blue"
+                          >use agile project estimation practices</span
+                        >
+                        to minimize risks and establish good relationships with
+                        the client. This approach goes beyond a raw calculation
+                        of abstract working hours but is based on previous
+                        experience with similar projects and estimation of the
+                        final product's value. A
+                        <span class="blue">discovery phase</span> is one of the
+                        best ways to do the calculations efficiently. Typically,
+                        it covers the requirements, business objectives, and
+                        tech stack. Once these aspects are covered, it's
+                        possible to provide a client with an estimate.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -476,22 +773,172 @@
         </div>
       </div>
     </section>
+
     <!-- BLOG -->
     <section>
       <div class="blog">
         <div class="container">
           <h2>Practices blog</h2>
           <div class="container">
-            <div class="row"></div>
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3500">
+                  <div class="cards">
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://wp.rocketech.it/wp-content/uploads/2021/03/signing-a-contract-with-an-agency-pitfalls-and-some-pieces-of-advice2@-400x224.jpg"
+                          alt="..."
+                          class="card-img"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Developing SaaS Applications for Startups: How to
+                          Build a Successful Solution
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://wp.rocketech.it/wp-content/uploads/2021/08/how-to-build-a-successful-saas-platform-from-scratch2@-400x224.jpg"
+                          alt="..."
+                          class="card-img"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          6 Levers Of Growth For Successful Development Of Your
+                          Company
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://wp.rocketech.it/wp-content/uploads/2023/08/manifest-most-reviewed-400x224.png"
+                          alt="..."
+                          class="card-img"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Mobile Development Trends and Approaches
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3500">
+                  <div class="cards">
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://wp.rocketech.it/wp-content/uploads/2021/03/mobile-development-trends-and-approaches2@-400x224.jpg"
+                          alt="..."
+                          class="card-img"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Mobile Development Trends and Approaches
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://wp.rocketech.it/wp-content/uploads/2021/02/how-to-avoid-difficulties-while-building-mvp-for-utility-tools2@-400x224.jpg"
+                          alt="..."
+                          class="card-img"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          How to Avoid Difficulties Building an MVP for Utility
+                          Tools
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-img">
+                        <img
+                          src="https://wp.rocketech.it/wp-content/uploads/2021/09/how-to-boost-your-companys-development_-6-levers-of-growth2@-400x224.jpg"
+                          alt="..."
+                          class="card-img"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Signing a Contract with an Agency: Pitfalls and
+                          Industry Insights
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev d-none"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next d-none"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
-          <button class="d-flex m-auto align-items-center white-button">
-            More Topics
-          </button>
-          <img src="" alt="" />
+
+          <div class="wrapper">
+            <div class="btn-wrapper">
+              <button class="white-button">More Topics</button>
+              <div class="arrow-icon">
+                <img src="images/arrow.svg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- FOOTER -->
+
+    <!-- FOOTER d-flex m-auto align-items-center-->
     <footer>
       <div class="container">
         <a class="navbar-brand" href="#"
@@ -585,35 +1032,5 @@
       </div>
     </footer>
     <script src="scripts.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

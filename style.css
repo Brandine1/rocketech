@@ -22,8 +22,23 @@ p {
   margin: 0;
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 28%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn-wrapper {
+  position: relative;
+}
+
 .white-button {
+  cursor: pointer;
+  display: block;
   font-size: 16px;
+  text-decoration: none;
   line-height: 1em;
   border: 1px solid #6e508c;
   border-radius: 30px;
@@ -31,6 +46,29 @@ p {
   color: #6e508c;
   background-color: white;
   transition: background-color 0.3s linear;
+}
+
+.arrow-icon {
+  position: absolute;
+  transform: rotate(45deg);
+  right: -60px;
+  top: -50px;
+  transition: all 0.35s;
+}
+
+.arrow-icon img {
+  position: absolute;
+  transform: rotate(-45deg);
+  transition: all 0.35s;
+}
+
+.white-button:hover {
+  color: white;
+  background-color: #6e508c;
+}
+
+.white-button:hover + .arrow-icon {
+  right: -60%;
 }
 
 span {
@@ -185,9 +223,92 @@ h3 {
   padding: 40px 0;
 }
 
+.accordion {
+  outline: none;
+  border: none;
+  --bs-accordion-active-bg: none;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: #dadada solid 1px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 16px;
+}
+
+.part {
+  margin-top: 20px;
+}
+
 /* BLOG */
 .blog {
-  margin-bottom: 160px;
+  padding-bottom: 160px;
+}
+
+.card {
+  display: inline-block;
+  width: 400px;
+  border: 0;
+}
+
+.card-body {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.card-text {
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: 600;
+  color: #6e508c;
+  transition: 0.3s linear;
+}
+
+.card:hover > .card-body p {
+  color: #cfc96f;
+}
+
+.card:hover > .card-img img {
+  transform: scale(1.05);
+}
+
+.card-img {
+  display: inline-block;
+  overflow: hidden;
+}
+.card-img img {
+  transition: 1s;
+  display: block;
+  cursor: pointer;
+}
+
+.slide {
+  height: 430px;
+  margin-bottom: 70px;
+}
+
+.carousel .carousel-indicators button {
+  background-color: #a18fb3;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #6e508c;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* FOOTER */
@@ -213,7 +334,7 @@ footer p {
 
 footer ul {
   display: inline-block;
-  margin-right: 60px;
+  margin-right: 50px;
   padding: 0;
   list-style: none;
 }
